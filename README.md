@@ -10,16 +10,17 @@ Simple client to send push notification through Expo.io and PHP.
 2. Usage
 --------
 ```php
-    $expoClient = new ExpoClient();
+    $expoClient = new \ExpoClient\Client();
     
     $tokens = [];
     
     // Register recipients
-    $tokens[] = new ExpoPushToken('ExponentPushToken[-smZaYGrQZ48VKRALD-GYt]');
-    $tokens[] = new ExpoPushToken('ExponentPushToken[-smZaYGrQZ78VKRALF-GZ2]');
+    $tokens[] = new \ExpoClient\PushToken('ExponentPushToken[-smZaYGrQZ48VKRALF-GYj]');
+    $tokens[] = new \ExpoClient\PushToken('ExponentPushToken[-smZaYGrQZ48VKRALF-GY2]');
+ 
     
     // Setup notification
-    $notification = new ExpoNotification();
+    $notification = new \ExpoClient\Notification();
     $notification->setTitle('Aweseome news for you');
     $notification->setBody('Click here to read the full news');
     $notification->setImage('https://gender-api.com/img/email/logo.png');
