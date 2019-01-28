@@ -1,0 +1,20 @@
+{
+  "name": "markus-perl/expo-client",
+  "description": "https://expo.io API Client for push notifications",
+  "keywords": ["expo", "exponent", "API Client", "expo.io", "push notifications", "push", "notifications"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Markus Perl"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "ExpoClient\\": "src"
+    }
+  }
+}
