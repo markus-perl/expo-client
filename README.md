@@ -9,7 +9,7 @@ Simple client to send push notification through Expo.io and PHP.
 
 2. Usage
 --------
-
+```php
     $expoClient = new ExpoClient();
     
     $tokens = [];
@@ -40,3 +40,4 @@ Simple client to send push notification through Expo.io and PHP.
         //Optional, print status
         echo $token . PHP_EOL;
     }
+```
